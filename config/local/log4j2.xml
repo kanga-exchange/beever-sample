@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <properties>
+        <property name="filters">io.vertx,io.netty,java.lang</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} %p %c{1} - %replace{%m{nolookups}}{"password":"[^"]*"}{"password":"*"}%n%rEx{filters(${filters})}</Pattern>
+                <replace regex="&quot;[0-9a-zA-Z+/=]{256,}&quot;" replacement="&quot;&lt;base64&gt;&quot;"/>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="warn">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <Logger name="io.beever" level="info"/>
+        <Logger name="io.beever.test" level="info"/>
+        <Logger name="io.beever.postgres" level="info"/>
+    </Loggers>
+</Configuration>
