@@ -17,7 +17,7 @@
             "bodyLimit": 1024000
         }
     },
-    "crypt-key": "22r8fd2h98dhn398hD#E",
+    "crypt-key": "22r8fd2h98dhn3rere98hD#E",
     "auth-token-timeout": 260000,
     "auth-token-reuse": 3600,
     "handlers": {
@@ -25,11 +25,7 @@
         "includes": [],
         "excludes": []
     },
-    "initial-messages": [
-        {
-            "address": "Maintenance"
-        }
-    ],
+    "initial-messages": [],
     "debug-mode": true,
     "stats": {
         "enabled": true
