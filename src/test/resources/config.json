@@ -1,0 +1,10 @@
+{
+    "version": "1.0.0",
+    "recaptcha": {
+        "local": true
+    },
+    "X-Forwarded-For": {
+        "localhost": 1
+    },
+    "build": "local"
+}

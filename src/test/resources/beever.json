@@ -1,0 +1,37 @@
+{
+    "admin-server": {
+        "host": "127.0.0.1",
+        "port": 8081
+    },
+    "public-server": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "compressionSupported": true,
+        "decompressionSupported": true,
+        "RouteFilter": {
+            "prefix": "/api",
+            "content-type-check": false
+        },
+        "BodyHandler": {
+            "uploadsDirectory": "file-uploads",
+            "bodyLimit": 1024000
+        }
+    },
+    "crypt-key": "22r8fd2h98dhn398hD#E",
+    "auth-token-timeout": 260000,
+    "auth-token-reuse": 3600,
+    "handlers": {
+        "root": "/io/beever/sample",
+        "includes": [],
+        "excludes": []
+    },
+    "initial-messages": [
+        {
+            "address": "Maintenance"
+        }
+    ],
+    "debug-mode": true,
+    "stats": {
+        "enabled": true
+    }
+}

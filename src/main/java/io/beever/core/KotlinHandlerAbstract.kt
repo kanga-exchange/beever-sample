@@ -1,4 +1,4 @@
-package io.beever.sample
+package io.beever.core
 
 import io.beever.BeeverHandler
 import io.reactivex.Single

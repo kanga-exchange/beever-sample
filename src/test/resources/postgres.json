@@ -1,8 +1,9 @@
 {
     "host": "localhost",
     "port": 5432,
-    "maxPoolSize": 30,
-    "user": "postgres",
-    "password": "",
-    "database": "test"
+    "maxPoolSize": 50,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "test",
+    "schema-file": "postgres.sql"
 }

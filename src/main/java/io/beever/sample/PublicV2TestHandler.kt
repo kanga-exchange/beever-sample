@@ -1,8 +1,10 @@
 package io.beever.sample
 
-import io.beever.annotation.*
-import io.beever.common.JsonHelper.toJson
-import io.beever.openapi.annotation.OpenAPI
+import io.beever.annotation.Input
+import io.beever.annotation.Output
+import io.beever.annotation.Outputs
+import io.beever.annotation.POST
+import io.beever.core.KotlinHandlerAbstract
 import io.vertx.core.json.JsonObject
 import io.vertx.reactivex.core.Vertx
 
