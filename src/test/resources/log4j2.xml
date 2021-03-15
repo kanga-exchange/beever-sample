@@ -15,6 +15,7 @@
         <Root level="warn">
             <AppenderRef ref="Console"/>
         </Root>
+        <Logger name="io.beever.sample" level="debug"/>
         <Logger name="io.beever" level="info"/>
         <Logger name="io.beever.test" level="info"/>
         <Logger name="io.beever.postgres" level="info"/>
